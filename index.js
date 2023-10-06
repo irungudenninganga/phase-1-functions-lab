@@ -27,9 +27,9 @@ function calculatesFarePrice(start, destination){
     }
      else if(distanceCoverd>=400 && distanceCoverd<=2000){
         return (distanceCoverd-400)*0.02
-    }else if(distanceCoverd>=2000){
+    }else if(distanceCoverd>=2000 && distanceCoverd<=2500){
         return 25;
-    }else if(distanceCoverd>2500){
+    }else {
         return 'cannot travel that far'
     }
 }
